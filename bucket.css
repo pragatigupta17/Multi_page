@@ -1,0 +1,156 @@
+/* Basic reset */
+body, h1, p, div, img, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Cart section styling */
+.cartpage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.cartpage .cart {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  /* Cart header styling */
+  /* Cart item styling */
+  /* Subtotal styling */
+  /* Cart buttons styling */
+}
+.cartpage .cart .cart-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cartpage .cart .cart-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.cartpage .cart .cart-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+.cartpage .cart .cart-item .item-info {
+  flex: 1;
+}
+.cartpage .cart .cart-item .item-info .item-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.cartpage .cart .cart-item .item-info .item-price {
+  color: #666;
+}
+.cartpage .cart .cart-item .remove-item {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #e74c3c;
+  transition: color 0.3s ease;
+}
+.cartpage .cart .cart-item .remove-item:hover {
+  color: #c0392b;
+}
+.cartpage .cart .subtotal {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.cartpage .cart .cart-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.cartpage .cart .cart-buttons button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+.cartpage .cart .cart-buttons button:hover {
+  background-color: lightseagreen;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .cart {
+    padding: 10px;
+  }
+  .cart .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart .cart-item img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  .cart .cart-item .item-info {
+    text-align: center;
+  }
+  .cart .cart-item .item-info .item-name {
+    font-size: 1em;
+  }
+  .cart .cart-item .item-info .item-price {
+    font-size: 0.9em;
+  }
+  .cart .cart-item .remove-item {
+    align-self: flex-end;
+  }
+  .cart .subtotal {
+    font-size: 1em;
+  }
+  .cart .cart-buttons {
+    flex-direction: column;
+  }
+  .cart .cart-buttons button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .cart-header {
+    font-size: 1.2em;
+  }
+  .cart-item img {
+    width: 60px;
+  }
+  .item-name {
+    font-size: 0.9em;
+  }
+  .item-price {
+    font-size: 0.8em;
+  }
+  .subtotal {
+    font-size: 0.9em;
+  }
+  .cart-buttons button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}/*# sourceMappingURL=bucket.css.map */

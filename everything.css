@@ -1,0 +1,305 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f3eb;
+  padding: 20px;
+}
+
+.filter-container {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.filter-container .search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.filter-container .search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.filter-container .search-bar button {
+  padding: 10px;
+  background-color: #79b662;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: #fff;
+}
+.filter-container .price-filter {
+  margin-bottom: 20px;
+}
+.filter-container .price-filter h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.filter-container .price-filter input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+  /* -webkit-appearance: none; */
+  height: 6px;
+  background: #c3e1af;
+  border-radius: 5px;
+  outline: none;
+}
+.filter-container .price-filter input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #79b662;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.cardprice {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 30px 50px;
+}
+.cardprice img {
+  width: 100%;
+}
+
+.cardprice .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+.filter-container .price-filter .price-values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+  color: #555;
+}
+.filter-container .categories a {
+  display: block;
+  margin-bottom: 10px;
+  color: #79b662;
+  text-decoration: none;
+  font-size: 1em;
+}
+.filter-container .categories a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #069308;
+  padding: 1rem;
+}
+nav img {
+  height: 50px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav label {
+  display: none;
+}
+nav label i {
+  font-size: 1.5rem;
+  color: white;
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav label {
+    display: block;
+  }
+}
+.productrating .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.productrating .card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 200px;
+  text-align: center;
+}
+
+.productrating .card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.cardprice .card h2,
+.productrating .card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.cardprice .card p,
+.productrating .card p {
+  color: #069308;
+  font-weight: bold;
+}
+.cardprice .card .rating,
+.productrating .card .rating {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+.cardprice .card .rating i,
+.productrating .card .rating i {
+  color: gray;
+}
+.cardprice .card .rating i:hover,
+.productrating .card .rating i:hover {
+  color: #069308;
+}
+
+.home {
+  text-align: center;
+  padding: 2rem;
+}
+.home h2,
+.home h1 {
+  color: #069308;
+}
+
+.footer {
+  background-color: white;
+  color: white;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.footerimg img {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.footer .pera {
+  grid-column: span 2;
+}
+
+.footer h1 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 0.5rem 0;
+}
+
+.footer ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .appstores img {
+  width: 140px;
+  margin-top: 0.5rem;
+}
+
+.copyright {
+  background-color: #222;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.social a:hover {
+  color: lightgray;
+}
+
+.copyright {
+  background-color: #222;
+  color: gray;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.copyright .social {
+  margin-top: 1rem;
+}
+.copyright .social a {
+  margin: 0 0.5rem;
+}
+.copyright .social a i {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.copyright .social a i:hover {
+  color: white;
+} /*# sourceMappingURL=everything.css.map */

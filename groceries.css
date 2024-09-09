@@ -1,0 +1,292 @@
+/*# sourceMappingURL=groceries.css.map */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables */
+  /* $primary-color: #069308; // Green color */
+  /* $secondary-color: #333; // Dark text color */
+  /* $light-color: #fff; */
+  /* $gray-color: gray; */
+  
+  /* General Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #click {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header & Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #fff;
+    font-size: larger;
+  }
+  
+  nav img {
+    height: 80px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    font-weight: 50px;
+  }
+  
+  nav ul li a:hover {
+    color: #069308;
+  }
+  
+  nav label {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Media Query for Tablets and Mobile Devices */
+ 
+  
+  .search-bar,
+  .price-filter,
+  .categories {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .groceries .cardprice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  
+  .groceries .cardprice .card {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .groceries .cardprice .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .groceries .cardprice .card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .groceries .cardprice .card p {
+    font-size: 1rem;
+    color: #069308;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .groceries .cardprice {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .groceries .cardprice .card {
+      max-width: 90%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Home Section */
+  .cardprice img{
+    width:100%;
+  }
+  .home {
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .home h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .home {
+      padding: 1rem;
+    }
+  }
+  
+  /* Product Rating Section */
+  .productrating .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+  }
+  
+  .productrating .cards .card {
+    max-width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .productrating .cards .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .productrating .cards .card h2 {
+    font-size: 1.2rem;
+  }
+  
+  .productrating .cards .card p {
+    color: #069308;
+  }
+  
+  .productrating .cards .card .rating {
+    margin: 0.5rem 0;
+  }
+  
+  .productrating .cards .card .rating i {
+    margin: 0 0.2rem;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .productrating .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .productrating .cards .card {
+      max-width: 90%;
+    }
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: white;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .footer .footerimg img {
+    max-width: 100px;
+  }
+  .footer .footerimg{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer .pera,
+  .footer .quicklinks,
+  .footer .sitelinks,
+  .footer .mobileapp {
+    padding: 1rem;
+  }
+  
+  .footer .pera h1,
+  .footer .quicklinks h1,
+  .footer .sitelinks h1,
+  .footer .mobileapp h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer .pera p,
+  .footer .quicklinks p,
+  .footer .sitelinks p,
+  .footer .mobileapp p {
+    font-size: 0.9rem;
+  }
+  
+  .footer .pera ul li,
+  .footer .quicklinks ul li,
+  .footer .sitelinks ul li,
+  .footer .mobileapp ul li {
+    margin-bottom: 0.5rem;
+  }
+  .footer .quicklinks{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer .google img {
+    max-width: 100px;
+  }
+  .footer .mobileapp{
+    display: flex;
+    flex-direction: column;
+  }
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .footer {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer .pera,
+    .footer .quicklinks,
+    .footer .sitelinks,
+    .footer .mobileapp {
+      text-align: center;
+    }
+  
+    .footer .google img {
+      margin: 0 auto;
+    }
+  }
+  
+  /* Copyright Section */
+  .copyright {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .copyright .social {
+    margin-top: 0.5rem;
+  }
+  
+  .social a {
+    margin: 0 0.5rem;
+  }
+  
+  .social i {
+    color: white;
+    font-size: 1.2rem;
+  }
+  

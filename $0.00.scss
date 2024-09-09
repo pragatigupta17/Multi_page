@@ -1,0 +1,275 @@
+// Variables for colors and font sizes
+$primary-color: #069308;
+$white-color: #fff;
+$font-color: #000;
+$font-size-base: 16px;
+$font-size-small: 14px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: $font-size-base;
+  color: $font-color;
+  line-height: 1.6;
+}
+
+// Navigation
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white-color;
+  padding: 15px;
+
+  img {
+    width: 150px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-left: 20px;
+
+      a {
+        color:$font-color ;
+        text-decoration: none;
+        font-size: $font-size-base;
+      }
+    }
+  }
+
+  label {
+    display: none;
+    font-size: 2rem;
+    color: $white-color;
+    cursor: pointer;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+.cart-button {
+  background-color: $primary-color;
+  color: $white-color;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: $font-size-base;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+// Shopping Section
+.shopping {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+
+  .shop img {
+    width:700px;
+    height:700px;
+  }
+
+  .cart {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color:$primary-color;
+    }
+
+    p {
+      font-size: $font-size-small;
+    }
+    .button{
+      display: flex; 
+      gap: 30px;
+    }
+  }
+
+  .box {
+    font-size: 2rem;
+    margin: 20px;
+  
+  }
+
+  .button {
+    margin: 20px;
+
+    button {
+      padding: 10px 30px;
+      border-radius: 5px;
+    }
+  }
+}
+
+// Reviews Section
+.reviews {
+  margin: 40px 20px;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: $font-size-small;
+    margin-top: 10px;
+  }
+}
+
+// Related Products Section
+.card {
+  margin: 40px 20px;
+
+  .addmore {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .card {
+      display: inline-block;
+      width: 30%;
+      padding: 20px;
+      margin: 10px;
+      background-color: $white-color;
+      border: 1px solid #ddd;
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+      }
+
+      p {
+        font-size: $font-size-small;
+        margin-top: 10px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+
+      .rating {
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+// Footer
+.footer {
+  background-color: black;
+  color: black;
+  
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+
+.footerimg{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  h1{
+    color: black;
+  }
+  p{
+    color: black;
+  }
+  img {
+    height: 50px;
+  }
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  .quicklinks{
+    h1{
+      color: black;
+      font-size: x-large;
+    }
+  }
+  
+}
+.mobile{
+  display: flex;
+  flex-direction: column;
+  p{
+    color: black;
+  }
+}
+  
+}
+
+
+
+// Media Queries for responsiveness
+@media only screen and (max-width: 1200px) {
+  .shopping {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  label {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+    position: absolute;
+    background-color: $primary-color;
+    top: 50px;
+    width: 100%;
+    left: 0;
+
+    li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+
+  .addmore .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    text-align: left;
+
+    .footerimg img {
+      width: 100px;
+    }
+  }
+
+  .cart {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: $font-size-small;
+    }
+  }
+}

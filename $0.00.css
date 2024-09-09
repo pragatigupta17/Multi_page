@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+}
+nav img {
+  width: 150px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+nav label {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.cart-button {
+  background-color: #069308;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.shopping {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.shopping .shop img {
+  width: 700px;
+  height: 700px;
+}
+.shopping .cart h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #069308;
+}
+.shopping .cart p {
+  font-size: 14px;
+}
+.shopping .cart .button {
+  display: flex;
+  gap: 30px;
+}
+.shopping .box {
+  font-size: 2rem;
+  margin: 20px;
+}
+.shopping .button {
+  margin: 20px;
+}
+.shopping .button button {
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.reviews {
+  margin: 40px 20px;
+}
+.reviews h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.reviews p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.card {
+  margin: 40px 20px;
+}
+.card .addmore h1 {
+  font-size: 2rem;
+}
+.card .addmore .card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.card .addmore .card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+.card .addmore .card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.card .addmore .card h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.card .addmore .card .rating i {
+  color: #069308;
+}
+
+.footer {
+  background-color: black;
+  color: black;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+.footer .footerimg {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.footer .footerimg h1 {
+  color: black;
+}
+.footer .footerimg p {
+  color: black;
+}
+.footer .footerimg img {
+  height: 50px;
+}
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+.footer .links .quicklinks h1 {
+  color: black;
+  font-size: x-large;
+}
+.footer .mobile {
+  display: flex;
+  flex-direction: column;
+}
+.footer .mobile p {
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .shopping {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  label {
+    display: block;
+  }
+  input[type=checkbox]:checked ~ ul {
+    display: block;
+    position: absolute;
+    background-color: #069308;
+    top: 50px;
+    width: 100%;
+    left: 0;
+  }
+  input[type=checkbox]:checked ~ ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .addmore .card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer {
+    text-align: left;
+  }
+  .footer .footerimg img {
+    width: 100px;
+  }
+  .cart h1 {
+    font-size: 1.5rem;
+  }
+  .cart p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=$0.00.css.map */
